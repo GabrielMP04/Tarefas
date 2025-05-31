@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f0f2f5;
+    color: #333;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #222;
+    text-align: center;
+}
+
+.table-container {
+    overflow-x: auto; /* Ensures table is scrollable on small screens */
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden; /* Ensures rounded corners are applied */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    min-width: 800px; /* Adjust as needed for small screens */
+}
+
+th, td {
+    padding: 14px 18px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background: #0077FF;
+    color: #fff;
+    font-weight: 600;
+}
+
+tr:hover {
+    background: #f1f1f1;
+}
+
+/* Status Colors */
+.status-em-andamento { color: #FF9800; font-weight: bold; } /* Orange */
+.status-concluído { color: #4CAF50; font-weight: bold; } /* Green */
+.status-aguardando-peças { color: #F44336; font-weight: bold; } /* Red */
+.status-pendente { color: #2196F3; font-weight: bold; } /* Blue */
+
+
+/* Priority Colors */
+.prioridade-baixa { color: #607D8B; } /* Blue Grey */
+.prioridade-média { color: #FFC107; } /* Amber */
+.prioridade-alta { color: #E91E63; } /* Pink */
+.prioridade-urgente { color: #D32F2F; font-weight: bold; animation: pulse 1s infinite alternate; } /* Dark Red, with animation */
+
+@keyframes pulse {
+    from { transform: scale(1); opacity: 1; }
+    to { transform: scale(1.05); opacity: 0.8; }
+}
+
+/* Buttons */
+.btn-add { background: #0077FF; }
+.btn-historico { background: #673AB7; } /* Deep Purple */
+.btn-save { background: #4CAF50; } /* Green */
+.btn-concluir { background: #607D8B; } /* Blue Grey */
+.btn-filtrar { background: #9C27B0; } /* Purple */
+.btn-voltar { background: #9E9E9E; } /* Grey */
+.btn-delete { background: #F44336; } /* Red */
+
+button {
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 5px;
+    transition: background-color 0.3s ease;
+    text-decoration: none; /* For links styled as buttons */
+    display: inline-block; /* For better spacing */
+    margin-top: 10px;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+.filtros {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    background: #fff;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
+}
+
+.filtros input[type="text"],
+.filtros input[type="date"],
+.filtros select {
+    flex: 1; /* Allow items to grow and shrink */
+    min-width: 180px; /* Minimum width before wrapping */
+    margin: 0; /* Override default margin for compact layout */
+}
+
+.filtros button {
+    margin-top: 0; /* Align buttons with inputs */
+    padding: 10px 20px; /* Adjust padding for filter buttons */
+}
+.filtros label {
+    margin-right: 5px;
+    white-space: nowrap; /* Prevent label from breaking */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .filtros {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .filtros input,
+    .filtros select,
+    .filtros button {
+        width: 100%;
+        margin-top: 10px;
+    }
+}

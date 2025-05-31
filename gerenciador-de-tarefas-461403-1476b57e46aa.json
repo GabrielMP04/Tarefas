@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "gerenciador-de-tarefas-461403",
+  "private_key_id": "1476b57e46aaec27dccec0f00e3b5c2aab9c910b",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCeINuhHKe2C9gg\nXRYtVFWzq1okA7OVraGGMysOky0wWylFg+H7iygB6OV6EsHIB4IN+So7iuUMwVLD\n4e1jtvHxIbAlf9YV9hRf9WZ3jPbuT1ir0/t2v337YQUc6+HxwzJ/4Od0X007Iqdk\nczFbdd3JoNjGIJtgA5weE98S/xdfqBQsNSk3qKOiH4/nOTQ7HEdpLIPVQnEY187M\nj/OJLzzKABg5akJgZbmlWxCh6W/bIkOJquI4677QF27HMi/AiF8odoVPQ5RQETXB\nFP7nlCL57bUWKk73/rwEYG51w6pmKIQJWI82jHECZrnxyO+NSz1g1ujFPeIZobuU\nFvJ+ezFvAgMBAA...\n-----END PRIVATE KEY-----\n",
+  "client_email": "gerenciador-de-tarefas@gerenciador-de-tarefas-461403.iam.gserviceaccount.com",
+  "client_id": "111977799513369527780",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/gerenciador-de-tarefas%40gerenciador-de-tarefas-461403.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
